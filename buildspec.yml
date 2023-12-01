@@ -9,7 +9,7 @@ phases:
   build:
     commands:
       - npm run build
-      - aws s3 sync s3://portfoliobuildartifact/portfolioEC2/build/ s3://myportfolioreact/
+      - aws s3 sync s3://portfoliobuildartifact/portfolioEC2/build/ s3://myportfolioreact2/ --region ap-south-2
 
 artifacts:
   files: '**/build/*'
